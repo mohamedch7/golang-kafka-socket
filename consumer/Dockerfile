@@ -7,9 +7,6 @@ COPY . .
 RUN go mod download
 
 # Build the Go application
-RUN go build -o consumer .  # For producer
-# Or for consumer
-# RUN go build -o consumer .
+RUN go build -o consumer
 
-CMD ["./consumer"]  # For producer
-# CMD ["./consumer"]  # For consumer
+CMD ["./consumer"]
